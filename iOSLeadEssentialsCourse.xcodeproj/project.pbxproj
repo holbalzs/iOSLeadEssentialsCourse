@@ -13,6 +13,8 @@
 		BE4DBD5829EC0BF9004157D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4DBD5629EC0BF9004157D7 /* Main.storyboard */; };
 		BE4DBD5A29EC0BFB004157D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4DBD5929EC0BFB004157D7 /* Assets.xcassets */; };
 		BE4DBD5D29EC0BFB004157D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4DBD5B29EC0BFB004157D7 /* LaunchScreen.storyboard */; };
+		BECCBF672A43AFBF0042194C /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECCBF662A43AFBF0042194C /* FeedItemsMapper.swift */; };
+		BECCBF692A43B0340042194C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECCBF682A43B0340042194C /* HTTPClient.swift */; };
 		BED41CA62A426A2C00A819D4 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = BED41CA52A426A2C00A819D4 /* EssentialFeed.docc */; };
 		BED41CAC2A426A2C00A819D4 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED41CA22A426A2C00A819D4 /* EssentialFeed.framework */; };
 		BED41CB22A426A2C00A819D4 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = BED41CA42A426A2C00A819D4 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +43,8 @@
 		BE4DBD5929EC0BFB004157D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4DBD5C29EC0BFB004157D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4DBD5E29EC0BFB004157D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECCBF662A43AFBF0042194C /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		BECCBF682A43B0340042194C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		BED41CA22A426A2C00A819D4 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED41CA42A426A2C00A819D4 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		BED41CA52A426A2C00A819D4 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				BED41CC12A426EF000A819D4 /* RemoteFeedLoader.swift */,
+				BECCBF662A43AFBF0042194C /* FeedItemsMapper.swift */,
+				BECCBF682A43B0340042194C /* HTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -297,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECCBF672A43AFBF0042194C /* FeedItemsMapper.swift in Sources */,
 				BED41CC22A426EF000A819D4 /* RemoteFeedLoader.swift in Sources */,
+				BECCBF692A43B0340042194C /* HTTPClient.swift in Sources */,
 				BED41CBC2A426B7700A819D4 /* FeedLoader.swift in Sources */,
 				BED41CBA2A426A6F00A819D4 /* FeedItem.swift in Sources */,
 				BED41CA62A426A2C00A819D4 /* EssentialFeed.docc in Sources */,
