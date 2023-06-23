@@ -11,10 +11,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.3.1.app
+    - uses: actions/checkout@v3
 
     - name: Build and test
       run: xcodebuild clean build test -project iOSLeadEssentialsCourse.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
