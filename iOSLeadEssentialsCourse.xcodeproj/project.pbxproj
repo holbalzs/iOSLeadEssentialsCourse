@@ -63,6 +63,8 @@
 		BEFA45232A5E0F4000AEB1A9 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFA45222A5E0F4000AEB1A9 /* FeedViewControllerTests.swift */; };
 		BEFA45252A5E101500AEB1A9 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED41CA22A426A2C00A819D4 /* EssentialFeed.framework */; };
 		BEFA452A2A5E109600AEB1A9 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67883E2A44F59E00069276 /* XCTestCase+MemoryLeakTracking.swift */; };
+		BEFA452C2A5E11E900AEB1A9 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFA452B2A5E11E900AEB1A9 /* FeedImageCell.swift */; };
+		BEFA452E2A5E122200AEB1A9 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFA452D2A5E122200AEB1A9 /* UIView+Shimmering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +163,8 @@
 		BEFA451F2A5E0F1100AEB1A9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BEFA45212A5E0F3F00AEB1A9 /* EssentialFeediOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EssentialFeediOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		BEFA45222A5E0F4000AEB1A9 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
+		BEFA452B2A5E11E900AEB1A9 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
+		BEFA452D2A5E122200AEB1A9 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +364,8 @@
 				BE9498292A5DBF51007A6D21 /* EssentialFeediOS.h */,
 				BE94982A2A5DBF51007A6D21 /* EssentialFeediOS.docc */,
 				BEFA451F2A5E0F1100AEB1A9 /* FeedViewController.swift */,
+				BEFA452B2A5E11E900AEB1A9 /* FeedImageCell.swift */,
+				BEFA452D2A5E122200AEB1A9 /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -733,6 +739,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFA45202A5E0F1100AEB1A9 /* FeedViewController.swift in Sources */,
+				BEFA452E2A5E122200AEB1A9 /* UIView+Shimmering.swift in Sources */,
+				BEFA452C2A5E11E900AEB1A9 /* FeedImageCell.swift in Sources */,
 				BE94982B2A5DBF51007A6D21 /* EssentialFeediOS.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
