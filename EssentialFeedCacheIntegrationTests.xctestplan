@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "56ABD192-D1CC-4DC0-9E69-FA4E16A39C62",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:iOSLeadEssentialsCourse.xcodeproj",
+          "identifier" : "BED41CA12A426A2C00A819D4",
+          "name" : "EssentialFeed"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:iOSLeadEssentialsCourse.xcodeproj",
+        "identifier" : "BE9146B22A5B812E00D43FBB",
+        "name" : "EssentialFeedCacheIntegrationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
