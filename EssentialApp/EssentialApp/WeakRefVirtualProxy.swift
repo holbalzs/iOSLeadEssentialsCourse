@@ -1,8 +1,8 @@
 //
 //  WeakRefVirtualProxy.swift
-//  EssentialFeediOS
+//  EssentialApp
 //
-//  Created by Holló Balázs on 2023. 07. 13..
+//  Created by Holló Balázs on 2023. 07. 16..
 //
 
 import UIKit

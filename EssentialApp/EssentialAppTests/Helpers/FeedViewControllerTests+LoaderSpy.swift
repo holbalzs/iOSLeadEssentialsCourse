@@ -1,8 +1,8 @@
 //
 //  FeedViewControllerTests+LoaderSpy.swift
-//  EssentialFeediOSTests
+//  EssentialAppTests
 //
-//  Created by Holló Balázs on 2023. 07. 12..
+//  Created by Holló Balázs on 2023. 07. 16..
 //
 
 import Foundation
@@ -67,3 +67,4 @@ extension FeedUIIntegrationTests {
     }
     
 }
+

@@ -1,8 +1,8 @@
 //
 //  FeedImageCell+TestHelpers.swift
-//  EssentialFeediOSTests
+//  EssentialAppTests
 //
-//  Created by Holló Balázs on 2023. 07. 12..
+//  Created by Holló Balázs on 2023. 07. 16..
 //
 
 import UIKit
