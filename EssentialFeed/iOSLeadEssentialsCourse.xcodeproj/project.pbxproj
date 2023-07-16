@@ -45,6 +45,8 @@
 		BE9D0D6F2A640B9300640503 /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0D6E2A640B9200640503 /* CacheFeedImageDataUseCaseTests.swift */; };
 		BE9D0D712A640BE700640503 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0D702A640BE700640503 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		BE9D0D732A640C0600640503 /* FeedImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0D722A640C0600640503 /* FeedImageDataStoreSpy.swift */; };
+		BE9D0E0B2A64285000640503 /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E0A2A64285000640503 /* FeedCache.swift */; };
+		BE9D0E0D2A64286000640503 /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E0C2A64286000640503 /* FeedImageDataCache.swift */; };
 		BE9F10F32A5B765B00D5446B /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F10F22A5B765B00D5446B /* FeedStoreSpecs.swift */; };
 		BE9F10F52A5B767C00D5446B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F10F42A5B767C00D5446B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
 		BE9F10F72A5B769200D5446B /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F10F62A5B769200D5446B /* XCTestCase+FailableInsertFeedStoreSpecs.swift */; };
@@ -183,6 +185,8 @@
 		BE9D0D6E2A640B9200640503 /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		BE9D0D702A640BE700640503 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		BE9D0D722A640C0600640503 /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
+		BE9D0E0A2A64285000640503 /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
+		BE9D0E0C2A64286000640503 /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		BE9F10F22A5B765B00D5446B /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		BE9F10F42A5B767C00D5446B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		BE9F10F62A5B769200D5446B /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
@@ -523,6 +527,8 @@
 				BED41CB92A426A6F00A819D4 /* FeedItem.swift */,
 				BED41CBB2A426B7700A819D4 /* FeedLoader.swift */,
 				BE76FD342A459C5700932AE3 /* FeedImage.swift */,
+				BE9D0E0A2A64285000640503 /* FeedCache.swift */,
+				BE9D0E0C2A64286000640503 /* FeedImageDataCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -932,6 +938,7 @@
 				BEA6FD032A5F5EF5007856F4 /* FeedErrorViewModel.swift in Sources */,
 				BE9D0D652A64091C00640503 /* FeedImageDataStore.swift in Sources */,
 				BECCBF672A43AFBF0042194C /* FeedItemsMapper.swift in Sources */,
+				BE9D0E0D2A64286000640503 /* FeedImageDataCache.swift in Sources */,
 				BED41CC22A426EF000A819D4 /* RemoteFeedLoader.swift in Sources */,
 				BE76FD2F2A45998200932AE3 /* LocalFeedLoader.swift in Sources */,
 				BE91468D2A5B7C2E00D43FBB /* ManagedCache.swift in Sources */,
@@ -943,6 +950,7 @@
 				BEA6FCFF2A5F5E89007856F4 /* FeedLoadingViewModel.swift in Sources */,
 				BECCBF692A43B0340042194C /* HTTPClient.swift in Sources */,
 				BEA6FD052A5F5FC5007856F4 /* FeedViewModel.swift in Sources */,
+				BE9D0E0B2A64285000640503 /* FeedCache.swift in Sources */,
 				BEDC2F652A62C8BB0097BAE7 /* FeedImageDataLoader.swift in Sources */,
 				BE9D0D672A64095200640503 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
 				BEDC2F682A62C9210097BAE7 /* HTTPURLResponse+StatusCode.swift in Sources */,
