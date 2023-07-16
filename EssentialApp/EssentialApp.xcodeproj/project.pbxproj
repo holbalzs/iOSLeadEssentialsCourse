@@ -19,8 +19,6 @@
 		BE29DE662A64530E0092FA70 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE652A64530E0092FA70 /* UIView+TestHelpers.swift */; };
 		BE9D0DB52A64154800640503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0DB42A64154800640503 /* AppDelegate.swift */; };
 		BE9D0DB72A64154800640503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0DB62A64154800640503 /* SceneDelegate.swift */; };
-		BE9D0DB92A64154800640503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0DB82A64154800640503 /* ViewController.swift */; };
-		BE9D0DBC2A64154800640503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9D0DBA2A64154800640503 /* Main.storyboard */; };
 		BE9D0DBE2A64154900640503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D0DBD2A64154900640503 /* Assets.xcassets */; };
 		BE9D0DC12A64154900640503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9D0DBF2A64154900640503 /* LaunchScreen.storyboard */; };
 		BE9D0DE72A64198A00640503 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9D0DE52A64198A00640503 /* EssentialFeed.framework */; };
@@ -94,8 +92,6 @@
 		BE9D0DB12A64154800640503 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9D0DB42A64154800640503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9D0DB62A64154800640503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE9D0DB82A64154800640503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE9D0DBB2A64154800640503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9D0DBD2A64154900640503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9D0DC02A64154900640503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE9D0DC22A64154900640503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,8 +171,6 @@
 			children = (
 				BE9D0DB42A64154800640503 /* AppDelegate.swift */,
 				BE9D0DB62A64154800640503 /* SceneDelegate.swift */,
-				BE9D0DB82A64154800640503 /* ViewController.swift */,
-				BE9D0DBA2A64154800640503 /* Main.storyboard */,
 				BE9D0DBD2A64154900640503 /* Assets.xcassets */,
 				BE9D0DBF2A64154900640503 /* LaunchScreen.storyboard */,
 				BE9D0DC22A64154900640503 /* Info.plist */,
@@ -329,7 +323,6 @@
 			files = (
 				BE9D0DC12A64154900640503 /* LaunchScreen.storyboard in Resources */,
 				BE9D0DBE2A64154900640503 /* Assets.xcassets in Resources */,
-				BE9D0DBC2A64154800640503 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +342,6 @@
 			files = (
 				BE9D0DF72A641BDB00640503 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				BE29DE4F2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
-				BE9D0DB92A64154800640503 /* ViewController.swift in Sources */,
 				BE9D0DF92A641BE900640503 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				BE9D0DFB2A64262E00640503 /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
 				BE29DE552A644AC20092FA70 /* MainQueueDispatchDecorator.swift in Sources */,
@@ -406,14 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE9D0DBA2A64154800640503 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE9D0DBB2A64154800640503 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE9D0DBF2A64154900640503 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -551,7 +535,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,7 +561,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
