@@ -13,6 +13,7 @@ class SceneDelegateTests: XCTestCase {
     
     func test_configureWindow_setsWindowAsKeyAndVisible() {
         let window = UIWindow()
+        window.windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
         let sut = SceneDelegate()
         sut.window = window
         
