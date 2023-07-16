@@ -31,10 +31,20 @@
 		BE9D0E052A6426F300640503 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E042A6426F300640503 /* FeedLoaderStub.swift */; };
 		BE9D0E072A64272800640503 /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E062A64272800640503 /* XCTestCase+FeedImageDataLoader.swift */; };
 		BE9D0E092A64273500640503 /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E082A64273500640503 /* XCTestCase+FeedLoader.swift */; };
+		BE9D0E0F2A64298E00640503 /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E0E2A64298E00640503 /* DebuggingSceneDelegate.swift */; };
+		BE9D0E172A642A8100640503 /* EssentialAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E162A642A8100640503 /* EssentialAppUIAcceptanceTests.swift */; };
+		BE9D0E192A642A8100640503 /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0E182A642A8100640503 /* EssentialAppUIAcceptanceTestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BE9D0DC82A64154A00640503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9D0DA92A64154800640503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE9D0DB02A64154800640503;
+			remoteInfo = EssentialApp;
+		};
+		BE9D0E1A2A642A8100640503 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE9D0DA92A64154800640503 /* Project object */;
 			proxyType = 1;
@@ -85,6 +95,10 @@
 		BE9D0E042A6426F300640503 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		BE9D0E062A64272800640503 /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		BE9D0E082A64273500640503 /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
+		BE9D0E0E2A64298E00640503 /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
+		BE9D0E142A642A8100640503 /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9D0E162A642A8100640503 /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
+		BE9D0E182A642A8100640503 /* EssentialAppUIAcceptanceTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +118,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE9D0E112A642A8100640503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,6 +133,7 @@
 			children = (
 				BE9D0DB32A64154800640503 /* EssentialApp */,
 				BE9D0DCA2A64154A00640503 /* EssentialAppTests */,
+				BE9D0E152A642A8100640503 /* EssentialAppUIAcceptanceTests */,
 				BE9D0DB22A64154800640503 /* Products */,
 				BE9D0DE42A64198A00640503 /* Frameworks */,
 			);
@@ -122,6 +144,7 @@
 			children = (
 				BE9D0DB12A64154800640503 /* EssentialApp.app */,
 				BE9D0DC72A64154A00640503 /* EssentialAppTests.xctest */,
+				BE9D0E142A642A8100640503 /* EssentialAppUIAcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +163,7 @@
 				BE9D0DF82A641BE900640503 /* FeedLoaderWithFallbackComposite.swift */,
 				BE9D0DFA2A64262E00640503 /* FeedImageDataLoaderCacheDecorator.swift */,
 				BE9D0DFC2A64263C00640503 /* FeedLoaderCacheDecorator.swift */,
+				BE9D0E0E2A64298E00640503 /* DebuggingSceneDelegate.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -177,6 +201,15 @@
 				BE9D0E042A6426F300640503 /* FeedLoaderStub.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE9D0E152A642A8100640503 /* EssentialAppUIAcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D0E162A642A8100640503 /* EssentialAppUIAcceptanceTests.swift */,
+				BE9D0E182A642A8100640503 /* EssentialAppUIAcceptanceTestsLaunchTests.swift */,
+			);
+			path = EssentialAppUIAcceptanceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +251,24 @@
 			productReference = BE9D0DC72A64154A00640503 /* EssentialAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE9D0E132A642A8100640503 /* EssentialAppUIAcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9D0E1C2A642A8100640503 /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */;
+			buildPhases = (
+				BE9D0E102A642A8100640503 /* Sources */,
+				BE9D0E112A642A8100640503 /* Frameworks */,
+				BE9D0E122A642A8100640503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE9D0E1B2A642A8100640503 /* PBXTargetDependency */,
+			);
+			name = EssentialAppUIAcceptanceTests;
+			productName = EssentialAppUIAcceptanceTests;
+			productReference = BE9D0E142A642A8100640503 /* EssentialAppUIAcceptanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +285,10 @@
 					BE9D0DC62A64154A00640503 = {
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
+						TestTargetID = BE9D0DB02A64154800640503;
+					};
+					BE9D0E132A642A8100640503 = {
+						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = BE9D0DB02A64154800640503;
 					};
 				};
@@ -253,6 +308,7 @@
 			targets = (
 				BE9D0DB02A64154800640503 /* EssentialApp */,
 				BE9D0DC62A64154A00640503 /* EssentialAppTests */,
+				BE9D0E132A642A8100640503 /* EssentialAppUIAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +331,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE9D0E122A642A8100640503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,6 +349,7 @@
 				BE9D0DB92A64154800640503 /* ViewController.swift in Sources */,
 				BE9D0DF92A641BE900640503 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				BE9D0DFB2A64262E00640503 /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
+				BE9D0E0F2A64298E00640503 /* DebuggingSceneDelegate.swift in Sources */,
 				BE9D0DB52A64154800640503 /* AppDelegate.swift in Sources */,
 				BE9D0DB72A64154800640503 /* SceneDelegate.swift in Sources */,
 				BE9D0DFD2A64263C00640503 /* FeedLoaderCacheDecorator.swift in Sources */,
@@ -309,6 +373,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE9D0E102A642A8100640503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9D0E192A642A8100640503 /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */,
+				BE9D0E172A642A8100640503 /* EssentialAppUIAcceptanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -316,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = BE9D0DB02A64154800640503 /* EssentialApp */;
 			targetProxy = BE9D0DC82A64154A00640503 /* PBXContainerItemProxy */;
+		};
+		BE9D0E1B2A642A8100640503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE9D0DB02A64154800640503 /* EssentialApp */;
+			targetProxy = BE9D0E1A2A642A8100640503 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -552,6 +630,40 @@
 			};
 			name = Release;
 		};
+		BE9D0E1D2A642A8100640503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2489GK9WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blahol.EssentialAppUIAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EssentialApp;
+			};
+			name = Debug;
+		};
+		BE9D0E1E2A642A8100640503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2489GK9WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blahol.EssentialAppUIAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EssentialApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +690,15 @@
 			buildConfigurations = (
 				BE9D0DDF2A64154A00640503 /* Debug */,
 				BE9D0DE02A64154A00640503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9D0E1C2A642A8100640503 /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9D0E1D2A642A8100640503 /* Debug */,
+				BE9D0E1E2A642A8100640503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
