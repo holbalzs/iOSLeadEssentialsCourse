@@ -11,7 +11,7 @@ public struct ImageCommentsViewModel {
     public let comments: [ImageCommentViewModel]
 }
 
-public struct ImageCommentViewModel: Equatable {
+public struct ImageCommentViewModel: Hashable {
     public let message: String
     public let date: String
     public let username: String
@@ -26,9 +26,9 @@ public struct ImageCommentViewModel: Equatable {
 public final class ImageCommentsPresenter {
     public static var title: String {
         NSLocalizedString("IMAGE_COMMENTS_VIEW_TITLE",
-            tableName: "ImageComments",
-            bundle: Bundle(for: Self.self),
-            comment: "Title for the image comments view")
+                          tableName: "ImageComments",
+                          bundle: Bundle(for: Self.self),
+                          comment: "Title for the image comments view")
     }
     
     public static func map(
