@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE29DE4D2A644A5A0092FA70 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE4C2A644A5A0092FA70 /* FeedUIComposer.swift */; };
-		BE29DE4F2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE4E2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift */; };
-		BE29DE512A644A8B0092FA70 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE502A644A8B0092FA70 /* FeedLoaderPresentationAdapter.swift */; };
 		BE29DE532A644AAE0092FA70 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE522A644AAE0092FA70 /* FeedViewAdapter.swift */; };
 		BE29DE572A644AD40092FA70 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE562A644AD40092FA70 /* WeakRefVirtualProxy.swift */; };
 		BE29DE642A6452F50092FA70 /* FeedUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE632A6452F50092FA70 /* FeedUIIntegrationTests+Assertions.swift */; };
@@ -17,6 +15,7 @@
 		BE29DE682A645DD50092FA70 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE672A645DD50092FA70 /* CombineHelpers.swift */; };
 		BE29DE6A2A6460CA0092FA70 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE692A6460CA0092FA70 /* FeedUIIntegrationTests.swift */; };
 		BE29DE6C2A646D410092FA70 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29DE6B2A646D410092FA70 /* FeedUIIntegrationTests+LoaderSpy.swift */; };
+		BE4559352A65CFE400A9B4F1 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4559342A65CFE400A9B4F1 /* LoadResourcePresentationAdapter.swift */; };
 		BE9D0DB52A64154800640503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0DB42A64154800640503 /* AppDelegate.swift */; };
 		BE9D0DB72A64154800640503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D0DB62A64154800640503 /* SceneDelegate.swift */; };
 		BE9D0DBE2A64154900640503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D0DBD2A64154900640503 /* Assets.xcassets */; };
@@ -68,8 +67,6 @@
 /* Begin PBXFileReference section */
 		BE29DE3F2A643BB00092FA70 /* EssentialApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
 		BE29DE4C2A644A5A0092FA70 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
-		BE29DE4E2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
-		BE29DE502A644A8B0092FA70 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		BE29DE522A644AAE0092FA70 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 		BE29DE562A644AD40092FA70 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		BE29DE632A6452F50092FA70 /* FeedUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		BE29DE672A645DD50092FA70 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		BE29DE692A6460CA0092FA70 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		BE29DE6B2A646D410092FA70 /* FeedUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
+		BE4559342A65CFE400A9B4F1 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		BE9D0DB12A64154800640503 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9D0DB42A64154800640503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9D0DB62A64154800640503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,10 +150,9 @@
 				BE9D0DBF2A64154900640503 /* LaunchScreen.storyboard */,
 				BE9D0DC22A64154900640503 /* Info.plist */,
 				BE29DE4C2A644A5A0092FA70 /* FeedUIComposer.swift */,
-				BE29DE4E2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift */,
-				BE29DE502A644A8B0092FA70 /* FeedLoaderPresentationAdapter.swift */,
 				BE29DE522A644AAE0092FA70 /* FeedViewAdapter.swift */,
 				BE29DE562A644AD40092FA70 /* WeakRefVirtualProxy.swift */,
+				BE4559342A65CFE400A9B4F1 /* LoadResourcePresentationAdapter.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -304,12 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE29DE4F2A644A750092FA70 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				BE29DE4D2A644A5A0092FA70 /* FeedUIComposer.swift in Sources */,
 				BE9D0DB52A64154800640503 /* AppDelegate.swift in Sources */,
 				BE29DE682A645DD50092FA70 /* CombineHelpers.swift in Sources */,
-				BE29DE512A644A8B0092FA70 /* FeedLoaderPresentationAdapter.swift in Sources */,
 				BE9D0DB72A64154800640503 /* SceneDelegate.swift in Sources */,
+				BE4559352A65CFE400A9B4F1 /* LoadResourcePresentationAdapter.swift in Sources */,
 				BE29DE572A644AD40092FA70 /* WeakRefVirtualProxy.swift in Sources */,
 				BE29DE532A644AAE0092FA70 /* FeedViewAdapter.swift in Sources */,
 			);

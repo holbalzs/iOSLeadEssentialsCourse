@@ -1,0 +1,8 @@
+/* 
+  Shared.strings
+  iOSLeadEssentialsCourse
+
+  Created by Holló Balázs on 2023. 07. 17..
+  
+*/
+"GENERIC_CONNECTION_ERROR" = "Não foi possível conectar com o servidor";
