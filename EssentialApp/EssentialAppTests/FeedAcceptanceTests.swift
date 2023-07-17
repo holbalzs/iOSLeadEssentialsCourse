@@ -39,18 +39,18 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertEqual(feed.numberOfRenderedFeedImageViews(), 0)
     }
     
-    func test_onEnteringBackground_deletesExpiredFeedCache() throws {
+    func test_onEnteringBackground_deletesExpiredFeedCache() {
         let store = InMemoryFeedStore.withExpiredFeedCache
         
-        try enterBackground(with: store)
+        enterBackground(with: store)
         
         XCTAssertNil(store.feedCache, "Expected to delete expired cache")
     }
     
-    func test_onEnteringBackground_keepsNonExpiredFeedCache() throws {
+    func test_onEnteringBackground_keepsNonExpiredFeedCache() {
         let store = InMemoryFeedStore.withNonExpiredFeedCache
         
-        try enterBackground(with: store)
+        enterBackground(with: store)
         
         XCTAssertNotNil(store.feedCache, "Expected to keep non-expired cache")
     }
@@ -60,22 +60,18 @@ class FeedAcceptanceTests: XCTestCase {
     private func launch(
         httpClient: HTTPClientStub = .offline,
         store: InMemoryFeedStore = .empty
-    ) -> FeedViewController {
+    ) -> ListViewController {
         let sut = SceneDelegate(httpClient: httpClient, store: store)
         sut.window = UIWindow()
         sut.configureWindow()
         
         let nav = sut.window?.rootViewController as? UINavigationController
-        return nav?.topViewController as! FeedViewController
+        return nav?.topViewController as! ListViewController
     }
     
-    private func enterBackground(with store: InMemoryFeedStore) throws {        
+    private func enterBackground(with store: InMemoryFeedStore) {
         let sut = SceneDelegate(httpClient: HTTPClientStub.offline, store: store)
-        
-        let sceneClass = NSClassFromString("UIScene") as? NSObject.Type
-        let scene = try XCTUnwrap(sceneClass?.init() as? UIScene)
-        
-        sut.sceneWillResignActive(scene)
+        sut.sceneWillResignActive(UIApplication.shared.connectedScenes.first!)
     }
     
     private func response(for url: URL) -> (Data, HTTPURLResponse) {
